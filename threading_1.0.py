@@ -6,7 +6,7 @@ import curses
 # Function to simulate file download
 def download_file():
     for i in range(10):
-        print(f"Downloading... {i * 10}%\n")
+        print(f"Downloading... {i * 10}%")
         time.sleep(1)
 
 # Function to read keyboard input
@@ -34,6 +34,3 @@ download_thread.join()
 
 # Cleanup curses
 curses.endwin()
-
-# Wait for the input thread to finish
-input_thread.join()
